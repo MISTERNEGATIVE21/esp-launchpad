@@ -1,9 +1,14 @@
 esp_toml_version = 1.0
 
-firmware_images_url = "https://adwait-esp.github.io/flasher/images/"
+firmware_images_url = "https://misternegative.github.io/SoS_Consentium/build/esp32.esp32.esp32doit-devkit-v1/"
 
-supported_apps = ["Matter-AllClustersApp-TE9", "Matter-AllClustersApp-M5Stack-TE9", "Matter-LightingApp-TE9", "RainMaker-Fan", "RainMaker-GPIO", "RainMaker-Homekit-Switch", "RainMaker-Led-Light", "RainMaker-Multi-Device", "RainMaker-Switch", "RainMaker-Temperature-Sensor"]
+supported_apps = ["Smart_Shoe_Telegram_Bot","Matter-AllClustersApp-TE9", "Matter-AllClustersApp-M5Stack-TE9", "Matter-LightingApp-TE9", "RainMaker-Fan", "RainMaker-GPIO", "RainMaker-Homekit-Switch", "RainMaker-Led-Light", "RainMaker-Multi-Device", "RainMaker-Switch", "RainMaker-Temperature-Sensor"]
 
+[Smart_Shoe_Telegram_Bot]
+# ESP32 Chipsets for which you have a supported Firmware App. Define a property for each supported chipset in the given format.
+chipsets = ["ESP32"]
+# Configure the name of the binary file
+image.esp32 = "SoS_Consentium/build/esp32.esp32.esp32doit-devkit-v1/SoS_Consentium.ino.bootloader.bin"
 
 [RainMaker-Fan]
 chipsets = ["ESP32", "ESP32-S2", "ESP32-C3"]
